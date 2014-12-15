@@ -1,0 +1,21 @@
+{
+  "name": "testCrud",
+  "version": "1.0.0",
+  "main": "app/index.html",
+  "authors": [
+    "Leon Peck"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.3.6"
+  }
+}
