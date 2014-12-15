@@ -2,6 +2,9 @@ node_modules/
 bower_components/
 *.log
 .sass-cache/*
+.sass-cache
+.DS_Store
+.DS_Store?
 build/
 dist/
 TODO.txt

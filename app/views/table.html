@@ -1,0 +1,23 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Link</th>
+      <th>Priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="wish in xmasCtrl.wishes">
+      <td>{{wish.item}}</td>
+      <td>{{wish.price}}</td>
+      <td><a href="{{wish.link}}">Link to {{wish.item}}</a></td>
+      <td>{{wish.priority}}</td>
+      <td>
+        <a class="btn btn-primary">Show</a>
+        <a class="btn btn-primary">Edit</a>
+        <button class="btn btn-danger" ng-click="xmasCtrl.removeWish()">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
