@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="ourApp">
 <head>
   <meta charset="UTF-8">
   <title>My Wish List</title>
@@ -8,8 +8,17 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <h1>Leon's Wish List</h1>
+  <h1>Leon & Sonda Wish List</h1>
   <h3>Yaaaaa Christmas!!</h3>
+
+  <div ng-controller="ChristmasController as xmasCtrl">
+    <a href="" class="btn btn-primary">Create Wish</a>
+    <a href="" class="btn btn-primary">Edit Wish</a>
+    <a href="" class="btn btn-primary">Show Wishlist</a>
+    <a href="" class="btn btn-success">Login</a>
+    <a href="" class="btn btn-danger">Logout</a>
+    <div ng-view></div>
+  </div>
 
   <script src="bower_components/firebase/firebase.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -18,11 +27,10 @@
   <script src="bower_components/angular-route/angular-route.min.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
-  <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
-  <script src="scripts/main.js"></script>
-  <script src="scripts/Wishfactory.js"></script>
-  <script src="scripts/config.js"></script>
-  <script src="scripts/controllers.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/Wishfactory.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/controllers.js"></script>
 
 </body>
 </html>
