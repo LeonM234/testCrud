@@ -14,5 +14,10 @@
         controller: "ChristmasController",
         controllerAs: "xmasCtrl"
       })
+      .when('/login', {
+        templateUrl: "views/login.html",
+        controller: "LoginController",
+        controllerAs: "loginCtrl"
+      })
     })
 }());

@@ -10,7 +10,7 @@
   <tbody>
     <tr ng-repeat="wish in xmasCtrl.wishes">
       <td>{{wish.item}}</td>
-      <td>{{wish.price}}</td>
+      <td>{{wish.price | currency}}</td>
       <td><a href="{{wish.link}}">Link to {{wish.item}}</a></td>
       <td>{{wish.priority}}</td>
       <td>

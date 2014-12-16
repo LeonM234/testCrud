@@ -14,7 +14,23 @@
             vm.wishes = data;
           })
       //}
+    })
+    .controller('LoginController', function($http, $location){
+      var vm = this;
+      var ref = new Firebase("https://testcrud.firebaseio.com/")
+
+      vm.login = function(){
+        ref.authWithPassword({
+          email    : vm.email,
+          password : vm.password
+        }, function(error, authData) {
+          if (error) {
+            console.log("Authenticated VERY UN-successfully with payload:", error);
+          } else {
+            console.log("Authenticated successfully with payload:", authData);
+          }
+        });
+      }
 
     })
-
 }());
